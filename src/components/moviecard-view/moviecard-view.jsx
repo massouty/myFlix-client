@@ -4,7 +4,6 @@ export class MovieCard extends React.Component {
   render() {
     const { movie, onMovieClick } = this.props;
 
-    return <MovieCard key={movie._id} movie={movie} 
-    onMovieClick={newSelectedMovie => { this.setState({ selectedMovie: newSelectedMovie }); }} />;
+    return <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>
   }
 }
