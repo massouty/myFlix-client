@@ -210,3 +210,5 @@ setSelectedMovie(newSelectedMovie) {
     );
   }
 }
+
+export default {MovieView}
